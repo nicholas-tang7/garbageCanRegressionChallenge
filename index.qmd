@@ -29,10 +29,14 @@ This report analyzes the relationship between `Anxiety`, `Stress`/`StressSurvey`
 ## R Code
 
 ```{r}
-#| echo: false
+#| include: false
 library(tidyverse)
 library(broom)
+```
 
+
+```{r}
+#| echo: false
 # Data with known true relationships: Anxiety = Stress + 0.1 × Time
 observDF <- tribble(
   ~Stress, ~StressSurvey, ~Time, ~Anxiety,
@@ -168,7 +172,7 @@ The model with Stress + Time has an R-squared value of 1, meaning that the model
 
 Questions to Answer for 95% Grade on Challenge:
 
-8. Reflect on Real-World Implications: For each of the two multiple regression models, assume their rrespective outputs/conclusions were published in academic journals and then subsequently picked up by the popular press. What headline about time spent on social media and its effect on anxiety would you expect to see from a popular press outlet covering the second model? Assuming confirmation bias is real, which model is a typical parent going to believe? Which model will Facebook, Instagram, and TikTok executives prefer?
+8. Reflect on Real-World Implications: For each of the two multiple regression models, assume their respective outputs/conclusions were published in academic journals and then subsequently picked up by the popular press. What headline about time spent on social media and its effect on anxiety would you expect to see from a popular press outlet covering the second model? Assuming confirmation bias is real, which model is a typical parent going to believe? Which model will Facebook, Instagram, and TikTok executives prefer?
 
 I would expect to see from the popular press a title similar to: "Research Shows That Time on Social Media Has a Direct Relationship with Anxiety and Stress!" Or even claiming that stress + time on social media causes anxiety.
 
