@@ -1,13 +1,28 @@
 ---
 title: "Garbage Can Regression Challenge"
+author: "Nicholas Tang"
+date: "today"
 format:
-  html: default
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: show
+    code-tools: true
+    df-print: paged
 execute:
   echo: false
   eval: true
+  warning: false
+  message: false
 ---
 
 # Garbage Can Regression Challenge
+
+## Executive Summary
+
+This report analyzes the relationship between `Anxiety`, `Stress`/`StressSurvey`, and `Time` using bivariate and multiple linear regression. We compare competing specifications, visualize fitted relationships with confidence intervals, and examine robustness using influence diagnostics and subset analyses (low vs high stress). Key findings highlight how measurement error and model specification affect inference.
 
 **Choose R or Python and delete the other code chunk.**
 
@@ -62,6 +77,7 @@ The estimated coefficient for StressSurvey is 1.047, which is close to the true 
 ```{r}
 #| label: plot-anxiety-vs-stresssurvey
 #| echo: false
+#| fig-cap: "Anxiety vs Stress Survey with fitted regression line and 95% CI"
 # Scatter plot with regression line using ggplot2
 ggplot(observDF, aes(x = StressSurvey, y = Anxiety)) +
   geom_point(color = "steelblue", alpha = 0.8) +
@@ -71,7 +87,7 @@ ggplot(observDF, aes(x = StressSurvey, y = Anxiety)) +
     x = "Stress Survey",
     y = "Anxiety"
   ) +
-  theme_minimal();'/'
+  theme_minimal()
 ```
 The regression seems to follow to overall pattern of the points but leave out some outliers.
 
@@ -91,6 +107,7 @@ The estimated coefficient for Time is 5.341, which is far off from the true rela
 ```{r}
 #| label: plot-anxiety-vs-time
 #| echo: false
+#| fig-cap: "Anxiety vs Time with fitted regression line and 95% CI"
 # Scatter plot with regression line using ggplot2
 ggplot(observDF, aes(x = Time, y = Anxiety)) +
   geom_point(color = "steelblue", alpha = 0.8) +
@@ -100,7 +117,7 @@ ggplot(observDF, aes(x = Time, y = Anxiety)) +
     x = "Time",
     y = "Anxiety"
   ) +
-  theme_minimal();'/'
+  theme_minimal()
 ```
 The regression seems to follow to overall pattern of the points but leaves out some outliers. The gray area shows the confidence interval range with 95% confidence. The graph with anxiety and time seems to have a larger area of confidence compared to stress survey meaning that it isn't as confident in predicting anxiety as the first graph was.
 
