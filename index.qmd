@@ -174,7 +174,7 @@ Questions to Answer for 95% Grade on Challenge:
 
 8. Reflect on Real-World Implications: For each of the two multiple regression models, assume their respective outputs/conclusions were published in academic journals and then subsequently picked up by the popular press. What headline about time spent on social media and its effect on anxiety would you expect to see from a popular press outlet covering the second model? Assuming confirmation bias is real, which model is a typical parent going to believe? Which model will Facebook, Instagram, and TikTok executives prefer?
 
-I would expect to see from the popular press a title similar to: "Research Shows That Time on Social Media Has a Direct Relationship with Anxiety and Stress!" Or even claiming that stress + time on social media causes anxiety.
+I would expect to see from the popular press a title similar to: "Get Off Social Media Now! Research Shows That Time on Social Media Has a Direct Relationship with Anxiety and Stress!" Or even claiming that stress + time on social media causes anxiety. I chose this title because news outlets often use titles that are misleading about the studies to gain initial attention.
 
 Assuming confirmation bias is real, a typical parent is going to believe the second model since a typical parents already has a stigma on social media being bad.
 
